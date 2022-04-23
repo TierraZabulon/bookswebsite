@@ -4,7 +4,7 @@
 }
 html {
   font-size: 2rem;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Libre Bodoni", serif;
   background: linear-gradient(lightyellow, rgb(140, 121, 135));
   height: 100vh;
 }
@@ -15,12 +15,26 @@ html {
 /*******************************************/
 /* 
 
-
+https://www.w3schools.com/howto/howto_css_responsive_header.asp
 */
 
 header {
   background: yellow;
+  overflow: hidden;
+  padding: 1rem;
   /* text-align: center; */
+}
+header a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+}
+header a.logo {
+  font-weight: bold;
+}
+.headerlinks {
+  float: right;
 }
 ul {
   list-style: none;
@@ -35,6 +49,7 @@ section {
 footer {
   background: fuchsia;
 }
+
 .wrapper {
   position: relative;
   display: flex;
@@ -66,23 +81,36 @@ footer {
   outline: 0;
   background-color: #f5f5f5;
 }
+
 .flexcontainer {
   display: flex;
   flex-direction: row;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  flex-wrap: wrap;
+  padding-left: 5vw;
+  padding-right: 5vw;
   border: 2px solid green;
   min-width: 100%;
   min-height: 20rem;
+  background-color: rgb(240, 221, 191);
 }
 
 .col {
   flex: 1;
   border: 2px solid blue;
 }
+.imgcontainer {
+  padding: 0rem 5rem;
+  text-align: center;
+}
 img {
   max-width: 500px;
   max-height: 300px;
+}
+
+.bottom {
+  border: 1px solid white;
+  width: 100%;
+  text-align: center;
 }
 /* nav * {
   text-align: center;
