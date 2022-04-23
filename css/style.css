@@ -2,38 +2,57 @@
 * {
   box-sizing: border-box;
 }
-
+html {
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  background: linear-gradient(lightyellow, rgb(140, 121, 135));
+  height: 100vh;
+}
 /* Clear fix hack */
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-
-.clear {
-  clear: both;
-}
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
-body {
-  background-color: rgb(168, 158, 158);
-  display: flex;
-}
+/* 
+
+
+*/
+
 header {
-  display: block;
+  background: yellow;
+  /* text-align: center; */
+}
+ul {
+  list-style: none;
 }
 li {
   display: inline;
 }
-header ul li {
-  list-style: none;
-  display: inline;
-  padding-left: 1%;
+section {
+  background: pink;
+}
+
+footer {
+  background: fuchsia;
+}
+
+.flexcontainer {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  border: 2px solid green;
+  min-width: 100%;
+  min-height: 20rem;
+}
+
+.col {
+  flex: 1;
+  border: 2px solid blue;
+}
+img {
+  max-width: 500px;
+  max-height: 300px;
 }
 /* nav * {
   text-align: center;
