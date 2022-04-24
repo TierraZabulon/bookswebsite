@@ -36,6 +36,12 @@ header a.logo {
 .headerlinks {
   float: right;
 }
+a {
+  color: black;
+}
+a:hover {
+  color: green;
+}
 ul {
   list-style: none;
 }
