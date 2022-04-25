@@ -108,6 +108,7 @@ footer {
   flex-wrap: wrap;
   padding-left: 5vw;
   padding-right: 5vw;
+  padding-bottom: 3rem;
   border: 2px solid green;
   min-width: 100%;
   min-height: 20rem;
